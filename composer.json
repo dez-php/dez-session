@@ -1,0 +1,22 @@
+{
+  "name": "dez-php/dez-session",
+  "description": "Session Component",
+  "keywords": ["php session", "session", "dez-php session"],
+  "authors": [
+    {
+      "name": "Ivan Gontarenko",
+      "email": "vania.gontarenko@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": ">=5.5",
+    "dez-php/dez-di": ">=1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dez\\Session\\": "src/Session"
+    }
+  }
+}
