@@ -61,7 +61,7 @@
         public function open( $systemSessionDirectory, $sessionName ) {
             $sessionDirectory   = "{$this->sessionsDirectory}/$sessionName";
             if( ! file_exists( $sessionDirectory ) ) {
-                if( mkdir( $sessionDirectory, 0777, true ) ) {
+                if( ! mkdir( $sessionDirectory, 0777, true ) ) {
                     throw new SessionException( 'Custom handler can`t create session directory' );
                 }
             }
