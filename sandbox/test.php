@@ -23,9 +23,7 @@
 
         $session->start();
 
-//        $session->set( 'test', [ '123123' ] );
-
-//    $session->set( 'var_'.rand(1000000,9999999), [ rand(1000000,9999999), md5( rand(1000000,9999999) ) ] );
+        $session->set( 'test', [ '123123' ] );
 
         var_dump($session, $_SESSION);
 
