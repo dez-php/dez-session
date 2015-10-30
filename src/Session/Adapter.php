@@ -101,6 +101,20 @@
 
         /**
          * @param $name
+         * @param $value
+         * @return $this
+         */
+        public function push( $name, $value ) {
+            $data   = $this->get( $name, [] );
+            $data   = ! is_array( $data ) ? [ $data ] : $data;
+            $data[] = $value;
+            $this->set( $name, $data );
+
+            return $this;
+        }
+
+        /**
+         * @param $name
          * @return $this
          */
         public function remove( $name ) {
